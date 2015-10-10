@@ -1,0 +1,23 @@
+{
+  "name": "course-api",
+  "version": "1.0.0",
+  "description": "The new version of the Scheduling API, now with prerequisites, course descriptions, and more!",
+  "main": "tree.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PseudoCorps/cmu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PseudoCorps/cmu/issues"
+  },
+  "homepage": "https://github.com/PseudoCorps/cmu#readme",
+  "dependencies": {
+    "collections": "^1.2.4",
+    "lodash": "^3.10.1"
+  }
+}
