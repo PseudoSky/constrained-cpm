@@ -23,6 +23,9 @@ The scraped data is primarily in the `/data` dir
 Modeling the requirements was slightly complicated, so I chose to represent the logical "and" using an array, and "or" using an object. I chose this because the situation of optional selection requires extra logic, therefore we can avoid additional recursive processing by differentiating the data type.
 This also made it so I wouldn't have to write out a full blown query language.
 
+Check out `data/course_reqs-s16.json` for a look at the raw data.
+Line 6589 is a good example: 15415 requiring 15210 or the combination of 15211 and 15213
+
 Prereqs are stored as strings inside of an array, and default to "AND" type logic, IE
 
 `"prereqs": ["33111","21120"]` would require both 33111 and 21120
