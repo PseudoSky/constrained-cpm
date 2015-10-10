@@ -215,10 +215,6 @@ var course_pick=[{name:'core',units:9, options:[
 // 		}
 // 	});
 // });
-
-var requirements=['15','21','67'];
-
-
 // function select_from(v){
 // 	var edges={},units=v.units;
 // 	if(v.next){
@@ -242,9 +238,12 @@ var requirements=['15','21','67'];
 // 	});
 // }
 
+var requirements=['15','21','67'];
+
+
+
 var start_edges={ '15112':1,'15110':1,'67250':1,'21111':1,'21120':1 };
 
-// console.log(_.pluck(course_pick,'name'));
 
 g.addVertex('start',start_edges);
 requirements=_.union(_.pluck(course_pick,'name'),requirements);
@@ -286,25 +285,3 @@ for( req in requirements ){
 	path=_.union(path,g.shortestPath('start', requirements[req]));
 }
 console.log(path);
-// console.log(_.union(g.shortestPath('start', '15'),g.shortestPath('start', '21'),g.shortestPath('start', '67')));
-
-// table.addActivity(new Activity({id:'15112',duration:1,predecessors:[ 'start': 1 ]);
-// table.addActivity(new Activity({id:'15110',duration:1,predecessors:[ 'start': 1 ]);
-// table.addActivity(new Activity({id:'67250',duration:1,predecessors:[ 'start': 1 ]);
-// table.addActivity(new Activity({id:'21111',duration:1,predecessors:[ 'start': 1 ]);
-// table.addActivity(new Activity({id:'21120',duration:1,predecessors:[ 'start': 1 ]);
-
-// table.addActivity(new Activity({id:'15121',duration:1,predecessors:[ '15112': 1 ]);
-// table.addActivity(new Activity({id:'15122',duration:1,predecessors:[ '15112': 1 ]);
-// table.addActivity(new Activity({id:'67262',duration:1,predecessors:[ '15112': 1, '15121':1, '15110':1, '67250':]);
-// table.addActivity(new Activity({id:'67272',duration:1,predecessors:[ '67262': 1 ]);
-// table.addActivity(new Activity({id:'67373',duration:1,predecessors:[ '67272': 1 ]);
-// table.addActivity(new Activity({id:'67475',duration:1,predecessors:[ '67373': 1 ]);
-// table.addActivity(new Activity({id:'21112',duration:1,predecessors:[ '21111': 1 ]);
-// table.addActivity(new Activity({id:'21120',duration:1,predecessors:[ '21111': 1 ]);
-// table.addActivity(new Activity({id:'21256',duration:1,predecessors:[ '21120': 1 ]);
-
-// table.addActivity(new Activity({id:'67',duration:1,predecessors:[ '67475':1 ]);
-// table.addActivity(new Activity({id:'15',duration:1,predecessors:['15121':1,'15122']);
-// table.addActivity(new Activity({id:'21',duration:1,predecessors:['21112':1,'21120':1,'21256':1 ]);
-// table.addActivity(new Activity({id:'complete',duration:1,predecessors:['21':1,'67':1,'15':1 ]);

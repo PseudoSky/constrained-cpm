@@ -1,3 +1,10 @@
+Code to solve the best route to complete a given degree given a set of requirements. This example produces a minimal path to complete CMU'S information systems major based on the degree requirements.
+
+The graph and algorythms are implemented in graph.js.
+
+The selection is run using heap structure.
+
+
 The scraped data is primarily in the `/data` dir
 
 `course_reqs-f15.json` and `course_reqs-s16.json` hold formatted scraped course lists.
