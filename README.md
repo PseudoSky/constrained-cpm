@@ -5,6 +5,12 @@ The graph and algorythms are implemented in graph.js.
 The selection is run using heap structure.
 
 
+
+
+
+
+## Notes
+
 The scraped data is primarily in the `/data` dir
 
 `course_reqs-f15.json` and `course_reqs-s16.json` hold formatted scraped course lists.
