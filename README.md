@@ -1,5 +1,9 @@
 Code to solve the best route to complete a given degree given a set of requirements. This example produces a minimal path to complete CMU'S information systems major based on the degree requirements.
 
+The data was scraped using =>
+https://github.com/PseudoSky/cmu_scraper
+Then parsed into a queriable format that  I define below.
+
 The graph and algorythms are implemented in graph.js.
 
 The selection is run using heap structure.
